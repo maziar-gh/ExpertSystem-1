@@ -34,15 +34,15 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:layout_weight="6"
-            android:src="@drawable/usericon" />
+            android:layout_weight="12"
+            android:src="@drawable/user" />
 
         <EditText
             android:id="@+id/editText"
             android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#66FFFFFF"
             android:layout_weight="1"
-            android:layout_height="match_parent"
-            android:backgroundTint="@color/white"
             android:ems="10"
             android:hint="UserName"
             android:inputType="textPersonName"
@@ -62,10 +62,11 @@
         android:layout_marginTop="30dp"
         android:id="@+id/linearLayout">
         <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
+            android:layout_width="134dp"
+            android:layout_height="50dp"
             android:layout_weight="6"
-            android:src="@android:drawable/ic_lock_idle_lock"
+
+            android:src="@drawable/openlock"
              />
 
         <EditText
@@ -73,7 +74,7 @@
             android:layout_width="match_parent"
             android:layout_weight="1"
             android:layout_height="match_parent"
-            android:backgroundTint="@color/white"
+            android:backgroundTint="#66FFFFFF"
             android:ems="10"
             android:paddingTop="8dp"
             android:hint="Password"
