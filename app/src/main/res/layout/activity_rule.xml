@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_rule"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.magicmob.javawy.expertsystem.RuleActivity"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.FloatingActionButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/send"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:id="@+id/send"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"/>
+
+        <ImageView
+            android:layout_marginTop="20dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:background="@drawable/lap"
+            android:layout_centerHorizontal="true"
+            />
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:id="@+id/recycler"/>
+
+
+</LinearLayout>
