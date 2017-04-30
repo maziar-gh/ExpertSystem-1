@@ -1,6 +1,8 @@
 package com.magicmob.javawy.expertsystem;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.preference.PreferenceManager;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -15,6 +17,7 @@ public class RuleActivity extends AppCompatActivity {
 
     RecyclerView recyclerView;
     FloatingActionButton  send;
+    String rul,fac;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,9 +35,13 @@ public class RuleActivity extends AppCompatActivity {
                 finish();
             }
         });
+        SharedPreferences settins = PreferenceManager
+                .getDefaultSharedPreferences(RuleActivity.this);
+        rul=settins.getString("rule", "no");
+        fac=settins.getString("fact", "no");
 
         HashMap<String ,String> map=new HashMap<>();
-//        map.put("")
+       map.put(rul,fac);
         for (int i=0;i<map.size();i++){
 
         }
